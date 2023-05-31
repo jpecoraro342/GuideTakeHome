@@ -44,6 +44,8 @@ extension GuideNetworkService : GuideService {
         do {
             let (data, _) = try await urlSession.data(for: request)
             
+            Logger.logger.debug("Response: \(String(data: data, encoding: .utf8) ?? "")")
+            
             let response = try decoder.decode(GuidesNetworkResponse.self, from: data)
             
             return response.data
