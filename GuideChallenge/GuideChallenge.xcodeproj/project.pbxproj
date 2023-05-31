@@ -28,6 +28,8 @@
 		15375E902A27842000669B40 /* GuideListDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15375E8C2A276CDE00669B40 /* GuideListDataService.swift */; };
 		15375E912A27842200669B40 /* GuideListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15375E8E2A276CF200669B40 /* GuideListModel.swift */; };
 		15375E922A27842500669B40 /* GuideListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15375E442A26CF0B00669B40 /* GuideListVC.swift */; };
+		15375E942A2799EF00669B40 /* TableViewCellIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15375E932A2799EF00669B40 /* TableViewCellIdentifier.swift */; };
+		15375E962A279A2C00669B40 /* GuideTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15375E952A279A2C00669B40 /* GuideTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		15375E8A2A276AF100669B40 /* GuideListDataServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideListDataServiceTests.swift; sourceTree = "<group>"; };
 		15375E8C2A276CDE00669B40 /* GuideListDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideListDataService.swift; sourceTree = "<group>"; };
 		15375E8E2A276CF200669B40 /* GuideListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideListModel.swift; sourceTree = "<group>"; };
+		15375E932A2799EF00669B40 /* TableViewCellIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCellIdentifier.swift; sourceTree = "<group>"; };
+		15375E952A279A2C00669B40 /* GuideTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +140,7 @@
 				15375E442A26CF0B00669B40 /* GuideListVC.swift */,
 				15375E8C2A276CDE00669B40 /* GuideListDataService.swift */,
 				15375E8E2A276CF200669B40 /* GuideListModel.swift */,
+				15375E952A279A2C00669B40 /* GuideTableViewCell.swift */,
 			);
 			path = GuideList;
 			sourceTree = "<group>";
@@ -167,6 +172,7 @@
 		15375E752A26D18700669B40 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				15375E932A2799EF00669B40 /* TableViewCellIdentifier.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -290,10 +296,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				15375E962A279A2C00669B40 /* GuideTableViewCell.swift in Sources */,
 				15375E452A26CF0B00669B40 /* GuideListVC.swift in Sources */,
 				15375E792A26D32B00669B40 /* GuideNetworkService.swift in Sources */,
 				15375E8D2A276CDE00669B40 /* GuideListDataService.swift in Sources */,
 				15375E412A26CF0B00669B40 /* AppDelegate.swift in Sources */,
+				15375E942A2799EF00669B40 /* TableViewCellIdentifier.swift in Sources */,
 				15375E7B2A26D38200669B40 /* GuideService.swift in Sources */,
 				15375E832A26D9B300669B40 /* Logger.swift in Sources */,
 				15375E8F2A276CF200669B40 /* GuideListModel.swift in Sources */,
