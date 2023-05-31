@@ -50,7 +50,7 @@ class GuideNetworkServiceTests: XCTestCase {
                              venue: Venue(city: nil, state: nil),
                              objType: "guide",
                              icon: URL(staticString: "https://s3.amazonaws.com/media.guidebook.com/service/i0wLTo2eEJbcY8vKpYK0MhC1SBm8TSmb9f0waLrc/logo.png")),
-                       "guide with no venue")
+                       "Guide with no venue")
         
         XCTAssertEqual(guides[1],
                        Guide(startDate: dateFormatter.date(from: ("Jun 02, 2023"))!,
@@ -60,7 +60,7 @@ class GuideNetworkServiceTests: XCTestCase {
                              venue: Venue(city: "Raleigh", state: "North Carolina"),
                              objType: "guide",
                              icon: URL(staticString: "https://s3.amazonaws.com/media.guidebook.com/service/sCA5C25OCG0R2S2ScYzZSYviaKYl6ONrFhilLpEG/logo.png")),
-                       "guide with venue")
+                       "Guide with venue")
     }
 }
 

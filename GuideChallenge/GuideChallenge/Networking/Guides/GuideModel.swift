@@ -12,6 +12,7 @@ struct GuidesNetworkResponse {
     let data: [Guide]
 }
 
+// TODO: depending on complexity, I'd like to use this model exclusively for the network response, then map it to a seperate domain object to be used elsewhere.
 struct Guide {
     let startDate: Date
     let endDate: Date

@@ -15,8 +15,9 @@ class GuideNetworkService {
 https://www.guide\
 book.com/service/v2
 """
+    let baseUrl : URL = URL(staticString: baseUrlString)
     
-    var decoder : JSONDecoder {
+    let decoder : JSONDecoder = {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MMM dd, yyy"
         
@@ -24,9 +25,8 @@ book.com/service/v2
         decoder.dateDecodingStrategy = .formatted(dateFormatter)
         
         return decoder
-    }
+    }()
     
-    let baseUrl : URL = URL(staticString: baseUrlString)
     let urlSession : URLSession
     
     init(urlSession: URLSession = URLSession.shared) {
@@ -36,7 +36,7 @@ book.com/service/v2
 
 extension GuideNetworkService : GuideService {
     func getUpcomingGuides() async -> [Guide] {
-        // TODO: Move this path somewhere else if we need to use it again
+        // TODO: Move this path somewhere it can be reused
         let url = baseUrl.appending(path: "/upcomingGuides")
         var request = URLRequest(url: url)
         request.httpMethod = "GET"

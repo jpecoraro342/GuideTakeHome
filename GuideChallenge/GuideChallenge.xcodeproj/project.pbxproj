@@ -22,6 +22,12 @@
 		15375E872A26E2C200669B40 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15375E862A26E2C200669B40 /* MockURLProtocol.swift */; };
 		15375E882A26E42B00669B40 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15375E822A26D9B300669B40 /* Logger.swift */; };
 		15375E892A26E43000669B40 /* GuideService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15375E7A2A26D38200669B40 /* GuideService.swift */; };
+		15375E8B2A276AF100669B40 /* GuideListDataServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15375E8A2A276AF100669B40 /* GuideListDataServiceTests.swift */; };
+		15375E8D2A276CDE00669B40 /* GuideListDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15375E8C2A276CDE00669B40 /* GuideListDataService.swift */; };
+		15375E8F2A276CF200669B40 /* GuideListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15375E8E2A276CF200669B40 /* GuideListModel.swift */; };
+		15375E902A27842000669B40 /* GuideListDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15375E8C2A276CDE00669B40 /* GuideListDataService.swift */; };
+		15375E912A27842200669B40 /* GuideListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15375E8E2A276CF200669B40 /* GuideListModel.swift */; };
+		15375E922A27842500669B40 /* GuideListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15375E442A26CF0B00669B40 /* GuideListVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,9 @@
 		15375E7F2A26D49900669B40 /* GuideNetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideNetworkServiceTests.swift; sourceTree = "<group>"; };
 		15375E822A26D9B300669B40 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
 		15375E862A26E2C200669B40 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
+		15375E8A2A276AF100669B40 /* GuideListDataServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideListDataServiceTests.swift; sourceTree = "<group>"; };
+		15375E8C2A276CDE00669B40 /* GuideListDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideListDataService.swift; sourceTree = "<group>"; };
+		15375E8E2A276CF200669B40 /* GuideListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideListModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +116,7 @@
 		15375E562A26CF0D00669B40 /* GuideChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				15375E8A2A276AF100669B40 /* GuideListDataServiceTests.swift */,
 				15375E7F2A26D49900669B40 /* GuideNetworkServiceTests.swift */,
 				15375E862A26E2C200669B40 /* MockURLProtocol.swift */,
 			);
@@ -124,6 +134,8 @@
 			isa = PBXGroup;
 			children = (
 				15375E442A26CF0B00669B40 /* GuideListVC.swift */,
+				15375E8C2A276CDE00669B40 /* GuideListDataService.swift */,
+				15375E8E2A276CF200669B40 /* GuideListModel.swift */,
 			);
 			path = GuideList;
 			sourceTree = "<group>";
@@ -280,9 +292,11 @@
 			files = (
 				15375E452A26CF0B00669B40 /* GuideListVC.swift in Sources */,
 				15375E792A26D32B00669B40 /* GuideNetworkService.swift in Sources */,
+				15375E8D2A276CDE00669B40 /* GuideListDataService.swift in Sources */,
 				15375E412A26CF0B00669B40 /* AppDelegate.swift in Sources */,
 				15375E7B2A26D38200669B40 /* GuideService.swift in Sources */,
 				15375E832A26D9B300669B40 /* Logger.swift in Sources */,
+				15375E8F2A276CF200669B40 /* GuideListModel.swift in Sources */,
 				15375E7E2A26D3D500669B40 /* GuideModel.swift in Sources */,
 				15375E432A26CF0B00669B40 /* SceneDelegate.swift in Sources */,
 			);
@@ -294,10 +308,14 @@
 			files = (
 				15375E892A26E43000669B40 /* GuideService.swift in Sources */,
 				15375E882A26E42B00669B40 /* Logger.swift in Sources */,
+				15375E902A27842000669B40 /* GuideListDataService.swift in Sources */,
 				15375E872A26E2C200669B40 /* MockURLProtocol.swift in Sources */,
 				15375E852A26DD3C00669B40 /* GuideNetworkService.swift in Sources */,
 				15375E842A26DD3900669B40 /* GuideModel.swift in Sources */,
+				15375E912A27842200669B40 /* GuideListModel.swift in Sources */,
+				15375E922A27842500669B40 /* GuideListVC.swift in Sources */,
 				15375E802A26D49900669B40 /* GuideNetworkServiceTests.swift in Sources */,
+				15375E8B2A276AF100669B40 /* GuideListDataServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
