@@ -12,17 +12,20 @@
 		15375E452A26CF0B00669B40 /* GuideListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15375E442A26CF0B00669B40 /* GuideListVC.swift */; };
 		15375E4A2A26CF0D00669B40 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15375E492A26CF0D00669B40 /* Assets.xcassets */; };
 		15375E4D2A26CF0D00669B40 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15375E4B2A26CF0D00669B40 /* LaunchScreen.storyboard */; };
+		15375E792A26D32B00669B40 /* GuideNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15375E782A26D32B00669B40 /* GuideNetworkService.swift */; };
+		15375E7B2A26D38200669B40 /* GuideService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15375E7A2A26D38200669B40 /* GuideService.swift */; };
+		15375E7E2A26D3D500669B40 /* GuideModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15375E7D2A26D3D500669B40 /* GuideModel.swift */; };
+		15375E802A26D49900669B40 /* GuideNetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15375E7F2A26D49900669B40 /* GuideNetworkServiceTests.swift */; };
+		15375E832A26D9B300669B40 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15375E822A26D9B300669B40 /* Logger.swift */; };
+		15375E842A26DD3900669B40 /* GuideModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15375E7D2A26D3D500669B40 /* GuideModel.swift */; };
+		15375E852A26DD3C00669B40 /* GuideNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15375E782A26D32B00669B40 /* GuideNetworkService.swift */; };
+		15375E872A26E2C200669B40 /* MockURLProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15375E862A26E2C200669B40 /* MockURLProtocol.swift */; };
+		15375E882A26E42B00669B40 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15375E822A26D9B300669B40 /* Logger.swift */; };
+		15375E892A26E43000669B40 /* GuideService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15375E7A2A26D38200669B40 /* GuideService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		15375E542A26CF0D00669B40 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 15375E352A26CF0B00669B40 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 15375E3C2A26CF0B00669B40;
-			remoteInfo = GuideChallenge;
-		};
-		15375E5E2A26CF0D00669B40 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 15375E352A26CF0B00669B40 /* Project object */;
 			proxyType = 1;
@@ -40,7 +43,12 @@
 		15375E4C2A26CF0D00669B40 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		15375E4E2A26CF0D00669B40 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15375E532A26CF0D00669B40 /* GuideChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuideChallengeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		15375E5D2A26CF0D00669B40 /* GuideChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GuideChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		15375E782A26D32B00669B40 /* GuideNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideNetworkService.swift; sourceTree = "<group>"; };
+		15375E7A2A26D38200669B40 /* GuideService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideService.swift; sourceTree = "<group>"; };
+		15375E7D2A26D3D500669B40 /* GuideModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideModel.swift; sourceTree = "<group>"; };
+		15375E7F2A26D49900669B40 /* GuideNetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideNetworkServiceTests.swift; sourceTree = "<group>"; };
+		15375E822A26D9B300669B40 /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		15375E862A26E2C200669B40 /* MockURLProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +66,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		15375E5A2A26CF0D00669B40 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -73,7 +74,6 @@
 			children = (
 				15375E3F2A26CF0B00669B40 /* GuideChallenge */,
 				15375E562A26CF0D00669B40 /* GuideChallengeTests */,
-				15375E602A26CF0D00669B40 /* GuideChallengeUITests */,
 				15375E3E2A26CF0B00669B40 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -83,7 +83,6 @@
 			children = (
 				15375E3D2A26CF0B00669B40 /* GuideChallenge.app */,
 				15375E532A26CF0D00669B40 /* GuideChallengeTests.xctest */,
-				15375E5D2A26CF0D00669B40 /* GuideChallengeUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				15375E742A26D14400669B40 /* App Delegates */,
+				15375E812A26D97800669B40 /* Logging */,
 				15375E752A26D18700669B40 /* Extensions */,
 				15375E732A26D12200669B40 /* Image Fetching */,
 				15375E722A26D11500669B40 /* Networking */,
@@ -107,15 +107,10 @@
 		15375E562A26CF0D00669B40 /* GuideChallengeTests */ = {
 			isa = PBXGroup;
 			children = (
+				15375E7F2A26D49900669B40 /* GuideNetworkServiceTests.swift */,
+				15375E862A26E2C200669B40 /* MockURLProtocol.swift */,
 			);
 			path = GuideChallengeTests;
-			sourceTree = "<group>";
-		};
-		15375E602A26CF0D00669B40 /* GuideChallengeUITests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = GuideChallengeUITests;
 			sourceTree = "<group>";
 		};
 		15375E702A26D10900669B40 /* Navigation */ = {
@@ -136,6 +131,7 @@
 		15375E722A26D11500669B40 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
+				15375E7C2A26D3C500669B40 /* Guides */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -161,6 +157,24 @@
 			children = (
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		15375E7C2A26D3C500669B40 /* Guides */ = {
+			isa = PBXGroup;
+			children = (
+				15375E7D2A26D3D500669B40 /* GuideModel.swift */,
+				15375E7A2A26D38200669B40 /* GuideService.swift */,
+				15375E782A26D32B00669B40 /* GuideNetworkService.swift */,
+			);
+			path = Guides;
+			sourceTree = "<group>";
+		};
+		15375E812A26D97800669B40 /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				15375E822A26D9B300669B40 /* Logger.swift */,
+			);
+			path = Logging;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,24 +215,6 @@
 			productReference = 15375E532A26CF0D00669B40 /* GuideChallengeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		15375E5C2A26CF0D00669B40 /* GuideChallengeUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 15375E6D2A26CF0D00669B40 /* Build configuration list for PBXNativeTarget "GuideChallengeUITests" */;
-			buildPhases = (
-				15375E592A26CF0D00669B40 /* Sources */,
-				15375E5A2A26CF0D00669B40 /* Frameworks */,
-				15375E5B2A26CF0D00669B40 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				15375E5F2A26CF0D00669B40 /* PBXTargetDependency */,
-			);
-			name = GuideChallengeUITests;
-			productName = GuideChallengeUITests;
-			productReference = 15375E5D2A26CF0D00669B40 /* GuideChallengeUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -234,10 +230,7 @@
 					};
 					15375E522A26CF0D00669B40 = {
 						CreatedOnToolsVersion = 14.3;
-						TestTargetID = 15375E3C2A26CF0B00669B40;
-					};
-					15375E5C2A26CF0D00669B40 = {
-						CreatedOnToolsVersion = 14.3;
+						LastSwiftMigration = 1430;
 						TestTargetID = 15375E3C2A26CF0B00669B40;
 					};
 				};
@@ -257,7 +250,6 @@
 			targets = (
 				15375E3C2A26CF0B00669B40 /* GuideChallenge */,
 				15375E522A26CF0D00669B40 /* GuideChallengeTests */,
-				15375E5C2A26CF0D00669B40 /* GuideChallengeUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -279,13 +271,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		15375E5B2A26CF0D00669B40 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -294,7 +279,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				15375E452A26CF0B00669B40 /* GuideListVC.swift in Sources */,
+				15375E792A26D32B00669B40 /* GuideNetworkService.swift in Sources */,
 				15375E412A26CF0B00669B40 /* AppDelegate.swift in Sources */,
+				15375E7B2A26D38200669B40 /* GuideService.swift in Sources */,
+				15375E832A26D9B300669B40 /* Logger.swift in Sources */,
+				15375E7E2A26D3D500669B40 /* GuideModel.swift in Sources */,
 				15375E432A26CF0B00669B40 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -303,13 +292,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		15375E592A26CF0D00669B40 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				15375E892A26E43000669B40 /* GuideService.swift in Sources */,
+				15375E882A26E42B00669B40 /* Logger.swift in Sources */,
+				15375E872A26E2C200669B40 /* MockURLProtocol.swift in Sources */,
+				15375E852A26DD3C00669B40 /* GuideNetworkService.swift in Sources */,
+				15375E842A26DD3900669B40 /* GuideModel.swift in Sources */,
+				15375E802A26D49900669B40 /* GuideNetworkServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,11 +308,6 @@
 			isa = PBXTargetDependency;
 			target = 15375E3C2A26CF0B00669B40 /* GuideChallenge */;
 			targetProxy = 15375E542A26CF0D00669B40 /* PBXContainerItemProxy */;
-		};
-		15375E5F2A26CF0D00669B40 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 15375E3C2A26CF0B00669B40 /* GuideChallenge */;
-			targetProxy = 15375E5E2A26CF0D00669B40 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -466,7 +449,6 @@
 				INFOPLIST_FILE = GuideChallenge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -494,7 +476,6 @@
 				INFOPLIST_FILE = GuideChallenge/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -515,6 +496,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CX87MDXJNH;
@@ -524,6 +506,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.joseph.pecoraro.GuideChallengeTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GuideChallenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GuideChallenge";
@@ -535,6 +518,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = CX87MDXJNH;
@@ -547,42 +531,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GuideChallenge.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GuideChallenge";
-			};
-			name = Release;
-		};
-		15375E6E2A26CF0D00669B40 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = CX87MDXJNH;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.joseph.pecoraro.GuideChallengeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = GuideChallenge;
-			};
-			name = Debug;
-		};
-		15375E6F2A26CF0D00669B40 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = CX87MDXJNH;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.joseph.pecoraro.GuideChallengeUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = GuideChallenge;
 			};
 			name = Release;
 		};
@@ -612,15 +560,6 @@
 			buildConfigurations = (
 				15375E6B2A26CF0D00669B40 /* Debug */,
 				15375E6C2A26CF0D00669B40 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		15375E6D2A26CF0D00669B40 /* Build configuration list for PBXNativeTarget "GuideChallengeUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				15375E6E2A26CF0D00669B40 /* Debug */,
-				15375E6F2A26CF0D00669B40 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
