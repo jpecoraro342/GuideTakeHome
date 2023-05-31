@@ -17,7 +17,7 @@ class GuideListVC: UIViewController {
     }()
     
     var guideService : GuideListDataService
-    var guideList : GuideList?
+    var guideList : GuideList
     var tableView : UITableView = UITableView()
     
     convenience init() {
@@ -25,6 +25,7 @@ class GuideListVC: UIViewController {
     }
     
     init(guideService: GuideListDataService) {
+        self.guideList = GuideList(startDates: [], upcomingGuides: [:])
         self.guideService = guideService
         super.init(nibName: nil, bundle: nil)
     }
@@ -85,36 +86,24 @@ class GuideListVC: UIViewController {
 
 extension GuideListVC : UITableViewDataSource, UITableViewDelegate {
     func numberOfSections(in tableView: UITableView) -> Int {
-        return guideList?.startDates.count ?? 0
+        return guideList.startDates.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        guard let date = guideList?.startDates[section] else {
-            Logger.logger.error("miscalculated number of sections")
-            return 0
-        }
-        
-        return guideList?.upcomingGuides[date]?.count ?? 0
+        let startDate = guideList.startDates[section]
+        return guideList.upcomingGuides[startDate, default: []].count
     }
     
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        guard let date = guideList?.startDates[section] else {
-            Logger.logger.error("date for section \(section) does not exist")
-            return nil
-        }
-        
-        return dateFormatter.string(from: date)
+        return dateFormatter.string(from: guideList.startDates[section])
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: GuideTableViewCell.identifier, for: indexPath) as? GuideTableViewCell ?? GuideTableViewCell()
         
-        guard let date = guideList?.startDates[indexPath.section] else {
-            Logger.logger.error("date for index path \(indexPath) does not exist")
-            return cell
-        }
+        let startDate = guideList.startDates[indexPath.section]
         
-        guard let guide = guideList?.upcomingGuides[date] else {
+        guard let guide = guideList.upcomingGuides[startDate] else {
             Logger.logger.error("guides for index path \(indexPath) does not exist")
             return cell
         }
